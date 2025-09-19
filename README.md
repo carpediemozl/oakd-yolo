@@ -296,3 +296,5 @@ tensorboard --logdir="D:\codefield\blind_cane_yolov8\runs\detect\train5"
 
 
 python train_and_save.py
+
+https://release-assets.githubusercontent.com/github-production-release-asset/434826774/fe1ca5f4-0cb3-4168-8c3c-cc6394a5e698?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-09-19T10%3A03%3A42Z&rscd=attachment%3B+filename%3Dclash-verge_1.3.8_amd64.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-09-19T09%3A03%3A21Z&ske=2025-09-19T10%3A03%3A42Z&sks=b&skv=2018-11-09&sig=dLUZwNjhewBEA0lP2mkvEwCXMt2AIdGQLAz6fwFsfXw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1ODI3Mjk3MSwibmJmIjoxNzU4MjcyNjcxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.UscOsojeVCY1phe5F9NLr5UA4Xp42zEymLENQRZl0T8&response-content-disposition=attachment%3B%20filename%3Dclash-verge_1.3.8_amd64.deb&response-content-type=application%2Foctet-stream
