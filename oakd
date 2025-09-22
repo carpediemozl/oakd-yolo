@@ -1,1 +1,13 @@
+depthai-python
+depthai
+不同
+git clone https://gitee.com/oakchina/depthai.git
+cd depthai
+python3 -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+修改requorements文件内容
+# 用nano修改requirements.txt文件 (将depthai-sdk版本改为1.9.3)
+nano requirements.txt
+
+python3 -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+python3 depthai_demo.py
