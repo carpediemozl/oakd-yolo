@@ -303,5 +303,11 @@ python3 install_requirements.py
 
 sudo apt install ./clash-verge_*_arm64.deb
 
+新终端输入开启vpn
 export http_proxy="http://127.0.0.1:7890"
 export http_proxy="https://127.0.0.1:7890"
+
+bashrc 写入
+
+
+sudo 
