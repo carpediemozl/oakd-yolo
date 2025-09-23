@@ -14,6 +14,9 @@ pip install adafruit-circuitpython-servokit -i https://pypi.tuna.tsinghua.edu.cn
 nano servo_test.py
 nano servo_manual_control.py
 python3 servo_scan.py
+wasd_conttroller wasd控制舵机
+unified_controller 画面+控制 失效
+launch_control_system 第二版画面加控制
 
 import time
 from adafruit_servokit import ServoKit
