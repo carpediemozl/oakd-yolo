@@ -1,0 +1,8 @@
+ssh knottedzz@nomad.local
+powershell
+ ssh连接之后
+sudo raspi-config
+3 Interface Options
+启用VNC
+
+hostname -I查看ip地址
