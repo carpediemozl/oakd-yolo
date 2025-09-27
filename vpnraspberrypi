@@ -2,6 +2,8 @@ gzip -d mihomo-linux-arm64-v1.18.1.gz
 mv mihomo-linux-arm64-v1.18.1 clash-core
 chmod +x clash-core
 
+mkdir -p ~/.config/mihomo/
+
 rm config.yaml
 wget -O config.yaml "https://url.v1.mk/sub?target=clash&url=http%3A%2F%2F43.139.138.166%3A17777%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D5c79c96a514b66908699302e1432976a&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
 ./clash-core -d .
@@ -13,7 +15,6 @@ date
 mv ~/Downloads/config.yaml ~/.config/mihomo/
 ~/Downloads/clash-core
   
-mkdir -p ~/.config/mihomo/
   
 设置开机自启 和 写入.bashrc
 sudo nano /etc/systemd/system/mihomo.service
