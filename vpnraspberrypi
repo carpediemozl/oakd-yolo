@@ -1,0 +1,46 @@
+gzip -d mihomo-linux-arm64-v1.18.1.gz
+mv mihomo-linux-arm64-v1.18.1 clash-core
+chmod +x clash-core
+
+rm config.yaml
+wget -O config.yaml "https://url.v1.mk/sub?target=clash&url=http%3A%2F%2F43.139.138.166%3A17777%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D5c79c96a514b66908699302e1432976a&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+./clash-core -d .
+download MMDB
+产生config.yaml文件
+同步时间
+sudo timedatectl set-ntp true
+date
+mv ~/Downloads/config.yaml ~/.config/mihomo/
+~/Downloads/clash-core
+  
+mkdir -p ~/.config/mihomo/
+  
+设置开机自启 和 写入.bashrc
+sudo nano /etc/systemd/system/mihomo.service
+
+写入
+[Unit]
+Description=Mihomo Daemon Service
+After=network.target
+
+[Service]
+Type=simple
+User=knottedzz
+ExecStart=/home/knottedzz/Downloads/clash-core
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload
+sudo systemctl start mihomo
+sudo systemctl enable mihomo
+sudo systemctl status mihomo 检查状态
+
+
+nano ~/.bashrc
+最底部添加
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export no_proxy="localhost,127.0.0.1,192.168.0.0/16"
